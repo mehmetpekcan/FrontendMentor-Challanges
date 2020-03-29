@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+}
+
+body,
+html,
+.container {
+   height: 100%;
+}
+
+body {
+   font-size: 20px;
+   font-family: "Libre Franklin", sans-serif;
+   display: flex;
+   justify-content: center;
+}
+
+.container {
+   width: 600px;
+   max-width: 600px;
+}
+
+/* HEADER */
+
+header {
+   width: 100%;
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+header .logo {
+   width: 75px;
+}
+
+header .logo img {
+   width: 100%;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+}
+
+main .slogan {
+   color: hsl(209, 33%, 12%);
+}
+
+main .slogan span {
+   font-weight: 300;
+   color: hsl(0, 0%, 59%);
+}
+
+main p {
+   margin-top: 20px;
+   font-size: 16px;
+}
+
+main form {
+   width: 100%;
+   max-width: 100%;
+   margin-top: 20px;
+}
+
+main form .form-control {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+main form input{
+   outline: none;
+   flex: 1;
+   margin-right: 10px;
+   border-radius: 1000px;
+   border: 1px solid hsl(0, 0%, 59%);
+   padding-left: 20px;
+   font-size: 16px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+main form input.alert{
+   border: 1px solid hsl(354, 100%, 66%);
+   color: hsl(354, 100%, 66%);
+}
+
+main form .form-control button {
+   width: 25%;
+   font-size: 16px;
+   max-width: 25%;
+   background-color: hsl(223, 87%, 63%);
+   box-shadow: 0 5px 10px hsl(223, 100%, 88%);
+   color: #fff;
+   padding: 15px 25px;
+   border-radius: 1000px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+}
+
+main form small{
+   opacity: 0;
+   font-style: italic;
+   font-size: 12px;
+   position: absolute;
+   bottom: -20px;
+   left: 20px;
+   color: hsl(354, 100%, 66%);
+}
+
+main img{
+   margin-top: 40px;
+}
+
+/* MAIN */
+
+/* FOOTER */
+
+footer{
+   display: flex;
+   flex-direction: column;
+}
+
+footer .social{
+   display: flex;
+   justify-content: center;
+}
+
+footer .social .social-container{
+   padding: 15px;
+   border: 1px solid hsl(223, 87%, 63%);
+   border-radius: 50px;
+   height: 30px;
+   margin: 5px;
+   width: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: all .3s ease;
+}
+
+footer .social .social-container i{
+   color: hsl(223, 87%, 63%);
+   font-size: 12px;
+}
+
+footer .social .social-container:hover{
+   background-color: hsl(223, 87%, 63%);
+}
+
+footer .social .social-container:hover i{
+   color: #fff;
+}
+
+footer p{
+   display: flex;
+   justify-content: center;
+   font-size: 14px;
+   color: hsl(0, 0%, 59%);
+   margin-top: 5px;
+}
+
+/* FOOTER */
+
+@media screen and (max-width: 768px){
+   .container{
+      padding: 50px;
+   }
+   
+   main .slogan{
+      text-align: center;
+      font-size: 24px;
+   }
+
+   main p{
+      font-size: 14px;
+   }
+   
+   main form .form-control{
+      flex-direction: column;
+   }
+
+   main form .form-control input, 
+   main form .form-control button{
+      width: 100%;
+      max-width: 100%;
+      margin: 5px 0;
+   }
+
+   main img{
+      margin-bottom: 100px;
+   }
+
+   footer .social{
+      margin-bottom: 30px;
+   }
+
+   footer p{
+      margin-bottom: 50px;
+   }
+}
