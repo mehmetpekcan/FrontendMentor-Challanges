@@ -6,8 +6,8 @@ The whole challanges are in https://www.frontendmentor.io/challenges
 
 And also you can see whole projects demo in
 
-https://frontendmentor-challanges.mehmetpekcan.now.sh/
+https://frontendmentor-challanges-git-master.mehmetpekcan.now.sh/
 
 for example;
 
-https://frontendmentor-challanges.mehmetpekcan.now.sh/ project.name / index.html
+https://frontendmentor-challanges-git-master.mehmetpekcan.now.sh/project.name/index.html
